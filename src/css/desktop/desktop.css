@@ -1,0 +1,9 @@
+#global-container {
+  width: 100vw;
+  height: auto;
+}
+
+#container {
+  width: 80%;
+  height: auto;
+}

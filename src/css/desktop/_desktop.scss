@@ -1,0 +1,841 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+
+html, body{
+    position: relative;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Roboto Slab','Noto Sans JP', sans-serif;
+  }
+
+#global-container{
+
+    width: 100vw;
+    height: auto;
+
+}
+
+#container{
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+.header-icon-menu{
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   gap: 0 3px;
+   padding:5px 15px 5px 0;
+
+    .header-icon-box{
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+           
+        .header-icon{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.header-logo{
+    
+
+    img{
+        width: 150px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.header-nav{
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+
+    ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding-inline-start:0;
+
+        div{
+
+            li{
+                list-style: none;
+
+                a{
+                    text-decoration: none;
+                    color: black;
+                    opacity: 0.5;
+                    font-size: 12px;
+
+                    &:hover{
+                        border-bottom: 1px solid rgba(126, 105, 105, 0.301);
+                        color: rgba(116, 103, 103, 0.616);
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+
+
+//swiper1↓
+
+.swiper1-box{
+
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+
+
+    .swiper{
+        width: 100%;
+        
+
+        .swiper-pagination {
+            position: relative !important;
+            margin-top: 10px;
+            text-align: right !important;
+        }
+        
+        .swiper-pagination-bullet{
+            background-color: black !important;
+            transform: scale(0.9);
+        }
+
+
+        .swiper-wrapper{
+
+            .swiper-slide{
+
+        
+            .swiper-cover{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top:0;
+                left: 0;
+                background-color: rgba(233, 233, 233, 0.3);
+                visibility: hidden;
+
+            }
+
+            img{
+                object-fit: cover;
+                
+            }
+            }
+
+            &:hover{
+                
+                .swiper-cover{
+                    visibility: visible;
+                }
+
+            }
+        }
+    }
+}
+
+
+.fashionable{
+    position: absolute;
+    bottom: 20%;
+    right: 3%;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    z-index: 1;
+}
+
+.cool{
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.classy{
+    position: absolute;
+    bottom: 20%;
+    right: 20%;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+
+//↑
+
+
+//swiper2↓
+
+.swiper2-box{
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+
+    & > div{
+        
+        margin: 20px 0;
+        font-size: 1.5rem;
+        color: rgba(95, 95, 95, 0.9);
+        font-family: 'Playfair Display', serif;
+        letter-spacing: 1px;
+    }
+
+    .Products-Index{
+
+        background-color: rgba(92, 92, 92, 0.5);
+        display: inline-block;
+        text-align: center;
+        padding: 10px 20px;
+        font-size: small;
+        color: white;
+        border-radius: 20px;
+        cursor: pointer;
+
+        &:hover{
+            background-color: rgba(150, 150, 150, 0.5);
+        }
+    }
+
+    .swiper{
+        margin-top: 20px;
+        
+
+        .swiper-wrapper{
+            
+
+            .swiper-slide{
+                margin-right: 0 !important; 
+                
+                cursor: pointer;
+                padding: 0 10px;
+
+                .swiper-cover{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(255, 255, 255, 0.3);
+                    visibility: hidden;
+
+                }
+
+                img{
+                    width: 300px;
+                    height: 271px;
+                    object-fit: cover;
+                }
+
+
+                &:hover{
+
+                    .swiper-cover{
+                        visibility: visible;
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+
+
+
+//lookwear-area
+
+.lookwear-area{
+    margin-top: 50px;
+    text-align: center;
+
+    .look-wear-index{
+        
+        margin-top: 30px;
+        font-size: small;
+        color: white;
+        background-color: rgba(92, 92, 92, 0.5);
+        display: inline-block;
+        border-radius: 20px;
+        cursor: pointer;
+        padding: 5px 20px;
+
+        &:hover{
+            background-color: rgba(150, 150, 150, 0.5);
+        }
+
+    }
+
+    & > div{
+
+        text-align: center;
+        font-family: 'Playfair Display', serif;
+        font-weight: 500;
+        font-size: 1.1rem;
+        color: rgba(95, 95, 95, 0.9);
+        margin-bottom: 15px;
+
+    }
+
+    .lookwear-img-box{
+        display: flex;
+        gap: 0 10px;
+        
+
+        .lookwear-img{
+            width: 33%;
+
+            div{
+                width: 100%;
+                position: relative;
+                cursor: pointer;
+
+                .img-cover{
+                        position: absolute;
+                        top:0;
+                        left:0;
+                        width:100%;
+                        height:100%;
+                        background-color: rgba(255, 255, 255, 0.3);
+                        visibility: hidden;
+                }
+
+                &:hover{
+
+                    .img-cover{
+
+                        visibility: visible;
+                    }
+                }
+                
+                img{
+                    height: 290px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+
+            .lookwear-text{
+                    margin-top: 20px;
+                    color: rgba(105, 105, 105, 0.9);
+            }
+
+        }
+
+
+    }
+}
+
+
+
+
+
+
+
+//OnlineStore
+
+
+.online-store-area{
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+        margin-bottom: 200px;
+
+    .text-onlinestore{
+        font-family: 'Playfair Display', serif;
+        width: 100%;
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: rgba(95, 95, 95, 0.9);
+        margin-bottom: 15px;
+    }
+
+    .online-store-nav{
+        display: flex;
+        justify-content: center;
+        gap: 0 3%;
+
+        div{
+            color: rgba(75, 74, 74, 0.9);
+            font-family: 'Playfair Display', serif;
+            font-size: 0.9rem;
+            cursor: pointer;
+
+            &:hover{
+                color: rgba(75, 74, 74, 0.6) ;
+            }
+
+        }
+
+
+    }
+
+    .online-store-img-area{
+        margin-top: 50px;
+        display: flex;
+        gap: 10px;
+        width: 100%;
+    
+
+
+        .img-box1{
+            width: 500%;
+            height: auto;
+
+            .img1{
+                width: 100%;
+                position: relative;
+
+                .img-cover{
+
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(255, 255, 255, 0.3);
+                    visibility: hidden;
+            
+                }
+
+                .img-cover-text-on-img{
+
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 20%;
+                    background-color: rgba(75, 75, 75, 0.4);
+                    visibility: hidden;
+                }
+
+                div{
+                    font-family: 'Playfair Display', serif;
+                    color: white;
+                    position: absolute;
+                    bottom: 5%;
+                    right: 10%;
+                    font-size: 1.2rem;
+                    visibility: hidden;
+                 }
+
+                &:hover{
+
+                    .img-cover-text-on-img{
+                        visibility: visible;
+                    }
+
+                    div{
+                        visibility: visible;
+                     }
+
+
+                    .img-cover{
+                        visibility: visible;
+                    }
+                }
+            }
+
+            .img-2-3-box{
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+                gap: 0 10px;
+
+                .img2{
+                    height: 244px;
+                    position: relative;
+
+                    .img-cover{
+
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(255, 255, 255, 0.3);
+                        visibility: hidden;
+                
+                    }
+    
+                    .img-cover-text-on-img{
+    
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 20%;
+                        background-color: rgba(75, 75, 75, 0.4);
+                        visibility: hidden;
+                    }
+    
+                    div{
+                        font-family: 'Playfair Display', serif;
+                        color: white;
+                        position: absolute;
+                        bottom: 5%;
+                        right: 10%;
+                        font-size: 1.2rem;
+                        visibility: hidden;
+                     }
+    
+                    &:hover{
+    
+                        .img-cover-text-on-img{
+                            visibility: visible;
+                        }
+    
+                        div{
+                            visibility: visible;
+                         }
+    
+    
+                        .img-cover{
+                            visibility: visible;
+                        }
+                    }
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .img3{
+                    height: 244px;
+                    position: relative;
+
+
+                    .img-cover{
+
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(255, 255, 255, 0.3);
+                        visibility: hidden;
+                
+                    }
+    
+                    .img-cover-text-on-img{
+    
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 20%;
+                        background-color: rgba(75, 75, 75, 0.4);
+                        visibility: hidden;
+                    }
+    
+                    div{
+                        font-family: 'Playfair Display', serif;
+                        color: white;
+                        position: absolute;
+                        bottom: 5%;
+                        right: 10%;
+                        font-size: 1.2rem;
+                        visibility: hidden;
+                     }
+    
+                    &:hover{
+    
+                        .img-cover-text-on-img{
+                            visibility: visible;
+                        }
+    
+                        div{
+                            visibility: visible;
+                         }
+    
+    
+                        .img-cover{
+                            visibility: visible;
+                        }
+                    }
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                }
+
+            }
+
+        }
+
+        .img-box2{
+            height: auto;
+            width: 500%;
+
+            .img-4-5-box{
+                display: flex;
+                justify-content: center;
+                gap: 0 10px;
+
+                .img4{
+                    height: 241px;
+                    position: relative;
+                    .img-cover{
+
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(255, 255, 255, 0.3);
+                        visibility: hidden;
+                
+                    }
+    
+                    .img-cover-text-on-img{
+    
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 20%;
+                        background-color: rgba(75, 75, 75, 0.4);
+                        visibility: hidden;
+                    }
+    
+                    div{
+                        font-family: 'Playfair Display', serif;
+                        color: white;
+                        position: absolute;
+                        bottom: 5%;
+                        right: 10%;
+                        font-size: 1.2rem;
+                        visibility: hidden;
+                     }
+    
+                    &:hover{
+    
+                        .img-cover-text-on-img{
+                            visibility: visible;
+                        }
+    
+                        div{
+                            visibility: visible;
+                         }
+    
+    
+                        .img-cover{
+                            visibility: visible;
+                        }
+                    }
+
+                    img{
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                }
+
+                .img5{
+                    height: 241px;
+                    position: relative;
+
+                    .img-cover{
+
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(255, 255, 255, 0.3);
+                        visibility: hidden;
+                
+                    }
+    
+                    .img-cover-text-on-img{
+    
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 20%;
+                        background-color: rgba(75, 75, 75, 0.4);
+                        visibility: hidden;
+                    }
+    
+                    div{
+                        font-family: 'Playfair Display', serif;
+                        color: white;
+                        position: absolute;
+                        bottom: 5%;
+                        right: 10%;
+                        font-size: 1.2rem;
+                        visibility: hidden;
+                     }
+    
+                    &:hover{
+    
+                        .img-cover-text-on-img{
+                            visibility: visible;
+                        }
+    
+                        div{
+                            visibility: visible;
+                         }
+    
+    
+                        .img-cover{
+                            visibility: visible;
+                        }
+                    }
+
+                    img{
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                }
+            }
+
+            .img6{
+
+                .img-cover{
+
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(255, 255, 255, 0.3);
+                    visibility: hidden;
+            
+                }
+
+                .img-cover-text-on-img{
+
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 20%;
+                    background-color: rgba(75, 75, 75, 0.4);
+                    visibility: hidden;
+                }
+
+                div{
+                    font-family: 'Playfair Display', serif;
+                    color: white;
+                    position: absolute;
+                    bottom: 5%;
+                    right: 10%;
+                    font-size: 1.2rem;
+                    visibility: hidden;
+                 }
+
+                &:hover{
+
+                    .img-cover-text-on-img{
+                        visibility: visible;
+                    }
+
+                    div{
+                        visibility: visible;
+                     }
+
+
+                    .img-cover{
+                        visibility: visible;
+                    }
+                }
+                margin-top: 10px;
+                position: relative;
+
+            }
+
+
+        }
+    }
+
+    .text-onlineshoptop{
+
+        margin-top: 50px;
+        font-size: small;
+        color: white;
+        background-color: rgba(92, 92, 92, 0.5);
+        display: inline-block;
+        border-radius: 20px;
+        cursor: pointer;
+        padding: 5px 20px;
+
+        &:hover{
+            background-color: rgba(150, 150, 150, 0.5);
+        }
+
+    }
+
+}
+//↑
+
+
+
+//footer
+
+.desktop-footer-area{
+    padding: 50px 0;
+    border-top: 1px solid rgba(95, 95, 95, 0.2);
+    text-align: center;
+
+    .footer-copyright{
+        color: rgba(95, 95, 95, 0.9);
+    }
+}
+
+
+//モバイル用footerの削除
+
+.mobile-footer{
+
+    visibility: hidden;
+    width: 0;
+    height:0;
+}
+
+
+
+
+
+//モバイル用メニューの削除
+.mobile-header{
+    display: none;
+    visibility: hidden;
+    width: 0;
+    height:0;
+}
+
+.mobile-nav{
+    display: none;
+    visibility: hidden;
+    width: 0;
+    height:0;
+}
